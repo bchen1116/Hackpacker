@@ -17,18 +17,21 @@ def traverseGraph(edgeLists, start, end, maxNights = 2, duration = 4):
     currentNights = 0
     visited = set(current)
     for i in range(duration):
-        nextPlace, nights = findNextPlace(edgeLists, i + currentNights, current[-1], visited, maxNights, currentNights)
+        nextPlace, nights = findNextPlace(edgeLists, i + currentNights, current[-1], end, visited, duration, maxNights, currentNights)
         current.append(nextPlace)
         visited.add(nextPlace)
         currentNights += nights
         print(nextPlace, currentNights)
-        if currentNights >= duration:
+        if currentNights >= duration and nextPlace == end:
             break
     print(current)
 
 
-def findNextPlace(edgeLists, day, start, visited, maxNights, currentNights):
-    nextPlace = sorted([x for x in edgeLists if (x.getDay() in range(day, day + maxNights) and x.getStart().toString() == start) and x.getEnd().toString() not in visited], key = lambda x: x.getPrice())[0]
+def findNextPlace(edgeLists, day, start, end, visited, duration, maxNights, currentNights):
+    if duration - currentNights > 1:
+        nextPlace = sorted([x for x in edgeLists if (x.getDay() in range(day, day + maxNights) and x.getStart().toString() == start and x.getEnd().toString() != end) and x.getEnd().toString() not in visited], key = lambda x: x.getPrice())[0]
+    else:
+        nextPlace = sorted([x for x in edgeLists if (x.getDay() in range(day, day + maxNights) and x.getStart().toString() == start and x.getEnd().toString() == end) and x.getEnd().toString() not in visited], key = lambda x: x.getPrice())[0]
     # for i in nextPlace:
     #     print(i.toString())
     # print("\n")
