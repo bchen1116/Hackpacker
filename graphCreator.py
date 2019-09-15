@@ -39,31 +39,24 @@ def initializeGraph(graphDictionary, inclusionSet):
                     for day, price in prices:
                         edgeLists.append(Edge(price, Node(key), Node(destination), day))
 
-    for edge in edgeLists:
-        print(edge.toString())
-
     return edgeLists
 
 # traverses the graph that we created, using an approximate algorithm (greedy)
 def traverseGraph(edgeLists, start, end, maxNights, startDate, endDate, inclusionSet):
-    # startDate = datetime.strptime(startDate, '%Y-%m-%d')
-    # endDate = datetime.strptime(endDate, '%Y-%m-%d')
     current = [start]
     currentPrice = 0
     currentDate = startDate
     visited = set(current)
     for i in range((endDate - startDate).days-1):
         nextPlace, price, nights = findNextPlace(edgeLists, current[-1], end, visited, maxNights, currentDate, startDate, endDate, inclusionSet)
-        print(nextPlace, price, nights)
         current.append(nextPlace)
         visited.add(nextPlace)
         currentDate = nights
         currentPrice += price
-        print(nextPlace, currentDate)
 
         if currentDate >= endDate and nextPlace == end:
             break
-    print(current, price)
+    return (current, price)
 
 # finds the next destination given our current location and where we want to go
 def findNextPlace(edgeLists, start, end, visited, maxNights, currentDate, startDate, endDate, inclusionSet):
@@ -88,23 +81,17 @@ arguments = sys.argv
 startDate = datetime.strptime(arguments[4], '%Y-%m-%d')
 endDate = datetime.strptime(arguments[5], '%Y-%m-%d')
 daysPer = (endDate - startDate).days // int(arguments[3])
-# graphDictionary = jsonToDic(graphDictionary, '2019-09-20', '2019-09-30')
 
 graphDictionary = dict()
 
 with open('flight_data.json', 'r') as fil:
     for line in fil:
-        # print(line)
         graphLine = json.loads(line)['data']
         graphDictionary = updateDictionary(graphDictionary, jsonToDic(graphLine, startDate, endDate))
 
-print(graphDictionary)
 inclusionSet = origins.intersection(departures)
-print(inclusionSet)
 edgeLists = initializeGraph(graphDictionary, inclusionSet)
 
-
-
-# traverseGraph(edgeLists, 'MAD', 'LON', 10, '2019-09-20', '2019-09-30')
-traverseGraph(edgeLists, arguments[1], arguments[2], daysPer, startDate, endDate, inclusionSet)
+current, price = traverseGraph(edgeLists, arguments[1], arguments[2], daysPer, startDate, endDate, inclusionSet)
+print("ITINERARY:", current, "PRICE:", price)
 
