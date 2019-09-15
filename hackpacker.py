@@ -8,15 +8,16 @@ from datetime import timedelta
 
 
 def find_cheapest(flights):
-    result_price = 0
+    result_price = None
     result = None
     for x in flights:
-        if(x['price'] <)
+        if(result_price == None or x['price'] < result_price):
+            result = x
+            result_price = x['price']
+    return result
 
 
-
-
-if(len(sys.argv) < 2):
+if(len(sys.argv) < 2 or len(sys.argv > 9)):
     print("Script takes in 1-6 airport codes (starting at 1) you want to visit in this format: ")
     print("python hackpacker <country_1> <country_2> <...> <start_date> (YYYY-MM-DD) <end_date>")
 
@@ -64,7 +65,8 @@ for i in country_list:
             print(next_leg)
         except:
             continue
-        visited.append(j)
+    trip = find_cheapest(next_leg)
+    visited.append(trip['origin'])
         
         
 

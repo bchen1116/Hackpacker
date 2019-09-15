@@ -1,0 +1,237 @@
+{
+    "data": [
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-17",
+            "price": {
+                "total": "31.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-17&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-18",
+            "price": {
+                "total": "31.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-18&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-24",
+            "price": {
+                "total": "31.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-24&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-25",
+            "price": {
+                "total": "31.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-25&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-26",
+            "price": {
+                "total": "31.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-26&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-28",
+            "price": {
+                "total": "31.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-28&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-30",
+            "price": {
+                "total": "31.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-30&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-21",
+            "price": {
+                "total": "42.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-21&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-23",
+            "price": {
+                "total": "42.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-23&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-27",
+            "price": {
+                "total": "42.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-27&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-29",
+            "price": {
+                "total": "55.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-29&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-22",
+            "price": {
+                "total": "64.44"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-22&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-16",
+            "price": {
+                "total": "73.51"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-16&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-19",
+            "price": {
+                "total": "78.38"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-19&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-20",
+            "price": {
+                "total": "78.38"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-20&adults=1&nonStop=false"
+            }
+        },
+        {
+            "type": "flight-date",
+            "origin": "MAD",
+            "destination": "LON",
+            "departureDate": "2019-09-15",
+            "price": {
+                "total": "117.38"
+            },
+            "links": {
+                "flightDestinations": "https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE",
+                "flightOffers": "https://test.api.amadeus.com/v1/shopping/flight-offers?origin=MAD&destination=LON&departureDate=2019-09-15&adults=1&nonStop=false"
+            }
+        }
+    ],
+    "dictionaries": {
+        "currencies": {
+            "EUR": "EURO"
+        },
+        "locations": {
+            "MAD": {
+                "subType": "AIRPORT",
+                "detailedName": "ADOLFO SUAREZ BARAJAS"
+            },
+            "LON": {
+                "subType": "CITY",
+                "detailedName": "LONDON"
+            }
+        }
+    },
+    "meta": {
+        "currency": "EUR",
+        "links": {
+            "self": "https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&destination=LON&departureDate=2019-09-15,2019-09-30&oneWay=true&nonStop=false&viewBy=DATE"
+        },
+        "defaults": {
+            "nonStop": false,
+            "viewBy": "DATE"
+        }
+    }
+}
