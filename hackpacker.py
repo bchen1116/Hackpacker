@@ -8,30 +8,19 @@ from datetime import timedelta
 
 
 def find_cheapest(flights):
-    print("list passed is: ")
-    print(flights)
     result_price = None
     result = None
     for x in flights:
-        print("x price is:")
-        print(x['price']['total'])
         if(result_price == None or float(x['price']['total']) < float(result_price)):
             result = x
             result_price = float(x['price']['total'])
-    print("cheapest result is")
-    print(result)
     return result
 
 
-def print_final_list(final_list):
-    print(final_list[0]['origin'])
     for i in range(1, len(final_list)):
-        print(' -> ' + final_list[i]['origin'])
 
 
 if(len(sys.argv) < 2 or len(sys.argv) > 9):
-    print("Script takes in 1-6 airport codes (starting at 1) you want to visit in this format: ")
-    print("python hackpacker <country_1> <country_2> <...> <start_date> (YYYY-MM-DD) <end_date>")
 
 country_list = sys.argv[1:(len(sys.argv)-2)]
 dates = sys.argv[len(sys.argv)-2:]
@@ -60,10 +49,7 @@ for i in country_list:
         continue
     next_leg = []
     for j in country_list:
-        print("searching for trip between %s and %s" %(i, j))
-        print("current origin = " + origin)
         if(j in visited or j == origin):
-            print("CONTINUING")
             continue
         start_date = datetime.strptime(travel_dates[-1], '%Y-%m-%d')
         end_date = start_date + timedelta(days=avg_time)
@@ -73,13 +59,9 @@ for i in country_list:
         flight_data = json.loads(os.popen(q_s).read())
         try:
             best_flight = flight_data['data'][0]
-            print("best flight:")
-            print(best_flight)
             next_leg.append(best_flight)
         except:
             continue
-    print("next leg options: ")
-    print(next_leg)
     if(next_leg != []):
         trip = find_cheapest(next_leg)
         origin = trip['destination']
@@ -89,9 +71,6 @@ for i in country_list:
         new = new_date.strftime('%Y-%m-%d')
         travel_dates.append(new)
 
-print("final list:")
-print(result)
-print_final_list(result)
 
         
         

@@ -13,11 +13,11 @@ f = open('flight_data.json', 'a+')
 with open('start_end_points.txt', 'r') as data_file:
     line = data_file.readline()
     while line:
-        print(line)
         points = line.split()
-        q_s = query_string.substitute(access_token= access_data, origin= points[0], destination= points[1], start = start, end = end)
-        flight_data = os.popen(q_s).read()
-        f.write(flight_data)
+        if(points[0] > "LAX"):
+            q_s = query_string.substitute(access_token= access_data, origin= points[0], destination= points[1], start = start, end = end)
+            flight_data = os.popen(q_s).read()
+            f.write(flight_data)
         line = data_file.readline()
 
 data_file.close()
